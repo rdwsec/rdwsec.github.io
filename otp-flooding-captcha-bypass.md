@@ -27,7 +27,7 @@ They put the CAPTCHA there thinking only a real user who passed it could reach p
 
 The request looked like this:
 
-​```http
+​
 POST /redacted HTTP/1.1
 Host: redacted
 Cookie: 7bbc95523096a3350=[REDACTED]; TS092aa=[REDACTED]
@@ -38,8 +38,7 @@ Content-Length: XYZ
     "Person name": "[REDACTED]",
     "Address": ""
 }
-​```
-
+​
 In Intruder I ran the `mobileNo` field through all Indian numbers (6666666666 to 9999999999). Every request sent an OTP SMS to that number. The OTP on page 3 was also brute forceable, which made it worse.
 
 ## Impact
